@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30422</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4228966B-3C42-422D-90F6-3EF05BE8463B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ResMon</RootNamespace>
+    <AssemblyName>ResMon</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AnalysisServices, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.AnalysisServices.AdomdClient, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ASCommands.cs" />
+    <Compile Include="Main Overview Tab\EditInstanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Overview Tab\EditInstanceForm.Designer.cs">
+      <DependentUpon>EditInstanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Overview Tab\NewInstanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Overview Tab\NewInstanceForm.Designer.cs">
+      <DependentUpon>NewInstanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Overview Tab\RefreshRateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Overview Tab\RefreshRateForm.Designer.cs">
+      <DependentUpon>RefreshRateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ActiveSessionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\ActiveSessionsPanel.Designer.cs">
+      <DependentUpon>ActiveSessionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\AlertsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\AlertsPanel.Designer.cs">
+      <DependentUpon>AlertsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\CPUPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\CPUPanel.Designer.cs">
+      <DependentUpon>CPUPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\CurrentQueriesPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\CurrentQueriesPanel.Designer.cs">
+      <DependentUpon>CurrentQueriesPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\DormantSessionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\DormantSessionsPanel.Designer.cs">
+      <DependentUpon>DormantSessionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\IOPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\IOPanel.Designer.cs">
+      <DependentUpon>IOPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\LocksPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\LocksPanel.Designer.cs">
+      <DependentUpon>LocksPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ObjectsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\ObjectsPanel.Designer.cs">
+      <DependentUpon>ObjectsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\RulesPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\RulesPanel.Designer.cs">
+      <DependentUpon>RulesPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\UsersPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panels\UsersPanel.Designer.cs">
+      <DependentUpon>UsersPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgramManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdReport1.rdlc" />
+    <EmbeddedResource Include="Main Overview Tab\EditInstanceForm.resx">
+      <DependentUpon>EditInstanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Overview Tab\NewInstanceForm.resx">
+      <DependentUpon>NewInstanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Overview Tab\RefreshRateForm.resx">
+      <DependentUpon>RefreshRateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\ActiveSessionsPanel.resx">
+      <DependentUpon>ActiveSessionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\AlertsPanel.resx">
+      <DependentUpon>AlertsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\CPUPanel.resx">
+      <DependentUpon>CPUPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\CurrentQueriesPanel.resx">
+      <DependentUpon>CurrentQueriesPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\DormantSessionsPanel.resx">
+      <DependentUpon>DormantSessionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\IOPanel.resx">
+      <DependentUpon>IOPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\LocksPanel.resx">
+      <DependentUpon>LocksPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\ObjectsPanel.resx">
+      <DependentUpon>ObjectsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\RulesPanel.resx">
+      <DependentUpon>RulesPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panels\UsersPanel.resx">
+      <DependentUpon>UsersPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResMonForm.resx">
+      <DependentUpon>ResMonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerControl.resx">
+      <DependentUpon>ServerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTab\AddRuleForm.resx">
+      <DependentUpon>AddRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTab\AlertDetailForm.resx">
+      <DependentUpon>AlertDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerTab\EditRuleForm.resx">
+      <DependentUpon>EditRuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="AdDataSet1.xsc">
+      <DependentUpon>AdDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AdDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AdDataSet1.xss">
+      <DependentUpon>AdDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ResMonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResMonForm.Designer.cs">
+      <DependentUpon>ResMonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rule.cs" />
+    <Compile Include="RuleManager.cs" />
+    <Compile Include="ServerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServerControl.Designer.cs">
+      <DependentUpon>ServerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServerManager.cs" />
+    <Compile Include="ServerTab\AddRuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTab\AddRuleForm.Designer.cs">
+      <DependentUpon>AddRuleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTab\AlertDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTab\AlertDetailForm.Designer.cs">
+      <DependentUpon>AlertDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServerTab\EditRuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerTab\EditRuleForm.Designer.cs">
+      <DependentUpon>EditRuleForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
