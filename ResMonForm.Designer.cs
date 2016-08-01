@@ -345,7 +345,7 @@ namespace Microsoft.AnalysisServices.Samples.ActivityViewer
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -360,7 +360,7 @@ namespace Microsoft.AnalysisServices.Samples.ActivityViewer
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -376,7 +376,7 @@ namespace Microsoft.AnalysisServices.Samples.ActivityViewer
             this.MainMenuStrip = this.menuStrip1;
             this.MinimumSize = new System.Drawing.Size(682, 542);
             this.Name = "ActivityViewerForm";
-            this.Text = "SSAS 2012 Activity Viewer Form";
+            this.Text = "SSAS Activity Viewer";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ActivityViewerForm_FormClosed);
             this.InstanceComparisonTab.ResumeLayout(false);
             this.InstanceComparisonTab.PerformLayout();
